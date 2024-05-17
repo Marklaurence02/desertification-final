@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="icon" type="image/png" href="image/logo.jpg">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<style>
+    
+    </style>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="">Newsfeed</a>
+            <a href="contact.html">Members</a>
+        </nav>
+    </header>
+
+    
+    <div class="title">
+        <h1>Newsfeed</h1>
+    </div>
+    
+    <div class="newsfeed">
+        
+        <div class="newsfeed-item">
+            <img src="news/img1.jpg" alt="Desertification Explained: Causes, Effects, and Solutions">
+            <div class="newsfeed-item-content">
+              <h2>The Great Green Wall: Africa's Ambitious Attempt To Fight <br>Desertification</h2>
+              <p>As our climate changes, we fear that warmer temperatures and drier conditions could make life hard for us. <br>In most locations, it's a future...</p>
+              <div class="buttons">
+                <button onclick="openWebsite('https://hackaday.com/2024/05/09/the-great-green-wall-africas-ambitious-attempt-to-fight-desertification/')">Go</button>
+            </div>
+            </div>
+           
+        </div>
+
+        <div class="newsfeed-item">
+            <img src="news/img2.jpg" alt="Desertification Explained: Causes, Effects, and Solutions">
+            <div class="newsfeed-item-content">
+              <h2>COMBATING DESERTIFICATION AND DROUGHT   </h2>
+              <p>Lack of water threatens the very existence of family farming in Chile, forcing farmers to adopt new techniques<br> or to leave their land....</p>
+              <div class="buttons">
+                <button onclick="openWebsite('https://www.ipsnews.net/news/environment/advancing-deserts/')">Go</button>
+            </div>
+            </div>
+           
+        </div>
+      
+            <div class="newsfeed-item">
+                <img src="news/img3.jpg" alt="Desertification Explained: Causes, Effects, and Solutions">
+                <div class="newsfeed-item-content">
+                  <h2>The Desertification of U.S. Healthcare | Asembia 2024</h2>
+                  <p>In an interview with Managed Healthcare Executive prior to his Asembia 24 presentation tiled "2024 State of the<br>
+                    Payer:Payers, Patients, Policy and Pressure,...</p>
+                  <div class="buttons">
+                    <button onclick="openWebsite('https://www.managedhealthcareexecutive.com/view/the-desertification-of-u-s-healthcare-asembia-2024')">Go</button>
+                </div>
+                </div>
+               
+            </div>
+            <div class="newsfeed-item">
+                <img src="news/img5.jpg" alt="Desertification Explained: Causes, Effects, and Solutions">
+                <div class="newsfeed-item-content">
+                  <h2>Oases face severe threats from desertification</h2>
+                  <p>For centuries, desert travelers have relied on oases as life-giving sanctuaries. These pockets of green have sust- <br>
+                    ained communities,...</p>
+                  <div class="buttons">
+                    <button onclick="openWebsite('https://www.earth.com/news/oases-grow-by-human-effort-but-face-threats-from-desertification/')">Go</button>
+                </div>
+                </div>
+               
+            </div>
+            <div class="newsfeed-item">
+                <img src="news/img4.jpg" alt="Desertification Explained: Causes, Effects, and Solutions">
+                <div class="newsfeed-item-content">
+                  <h2>Battling desertification: Bringing soil back to life<br> in semiarid Spain</h2>
+                  <p>Southeastern Spain is experiencing the northward advance of the Sahara Desert,leading to declining rainfall, soil degradation, <br>
+                     and climate change-induced...</p>
+                  <div class="buttons">
+                    <button onclick="openWebsite('https://news.mongabay.com/2023/10/battling-desertification-bringing-soil-back-to-life-in-semiarid-spain/')">Go</button>
+                </div>
+                </div>
+               
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="popupContainer" class="popup" style="display: none;">
+        <div class="title-bar">
+            <div class="titles">Desertification Newsfeed</div>
+            <button class="close-btn" onclick="closeWebsite()">X</button>
+        </div>
+        <iframe id="websiteFrame" sandbox="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        function openWebsite(url) {
+            const popup = document.getElementById('popupContainer');
+            const iframe = document.getElementById('websiteFrame');
+            const closeButton = document.querySelector('.close-btn');
+    
+            iframe.src = url;
+            popup.style.display = 'block';
+    
+            iframe.onload = function() {
+                closeButton.focus();
+            };
+        }
+    
+        function closeWebsite() {
+            const popup = document.getElementById('popupContainer');
+            const iframe = document.getElementById('websiteFrame');
+    
+            iframe.src = '';
+            popup.style.display = 'none';
+        }
+    </script>
+    
+    <style>
+        
+    </style>
+</body>
+</html>
+
+
